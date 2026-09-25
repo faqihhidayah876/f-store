@@ -3,7 +3,6 @@
   "version": 2,
   "cleanUrls": true,
   "trailingSlash": false,
-  "public": false,
   "headers": [
     {
       "source": "/(.*)",
@@ -27,15 +26,6 @@
       ]
     },
     {
-      "source": "/index.html",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=0, must-revalidate"
-        }
-      ]
-    },
-    {
       "source": "/(.*).(png|jpg|jpeg|gif|svg|webp|ico|woff|woff2)",
       "headers": [
         {
@@ -48,7 +38,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/index.html"
+      "destination": "/f-store.html"
     }
   ]
 }
